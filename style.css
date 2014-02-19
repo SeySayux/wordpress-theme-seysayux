@@ -1,0 +1,531 @@
+/*
+Theme Name: SeySayux
+Theme URI: http://seysayux.net
+Author: SeySayux
+Author URI: http://seysayux.net
+Description: SeySayux
+Version: 1.0
+License: Mine.
+License URI: http://seysayux.net
+Tags: none
+Text Domain: seysayux
+
+*/
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/lato-hai-webfont-seysayux.net.eot');
+    src: url('fonts/lato-hai-webfont-seysayux.net.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lato-hai-webfont-seysayux.net.woff') format('woff'),
+         url('fonts/lato-hai-webfont-seysayux.net.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/lato-lig-webfont-seysayux.net.eot');
+    src: url('fonts/lato-lig-webfont-seysayux.net.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lato-lig-webfont-seysayux.net.woff') format('woff'),
+         url('fonts/lato-lig-webfont-seysayux.net.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/lato-ligita-webfont-seysayux.net.eot');
+    src: url('fonts/lato-ligita-webfont-seysayux.net.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lato-ligita-webfont-seysayux.net.woff') format('woff'),
+         url('fonts/lato-ligita-webfont-seysayux.net.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/lato-reg-webfont-seysayux.net.eot');
+    src: url('fonts/lato-reg-webfont-seysayux.net.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lato-reg-webfont-seysayux.net.woff') format('woff'),
+         url('fonts/lato-reg-webfont-seysayux.net.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/lato-regita-webfont-seysayux.net.eot');
+    src: url('fonts/lato-regita-webfont-seysayux.net.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lato-regita-webfont-seysayux.net.woff') format('woff'),
+         url('fonts/lato-regita-webfont-seysayux.net.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+body {
+    font-family: Garamond, Baskerville, Palatino, Georgia, "Times New Roman", serif;
+    background-color: white;
+    color: black;
+}
+
+a {
+    color: #2222aa;
+    text-decoration: none;
+}
+
+.contents p a:not(.more-link)::after {
+    content: " ";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("img/link.svg");
+    margin-left: 5px;
+    position: relative;
+    top: 1px;
+}
+
+a:hover {
+    color: #6666ff;
+    text-decoration: underline;
+}
+
+hr.light {
+    color: silver;
+    background-color: silver;
+    border-color: silver;
+}
+
+hr.double {
+    background-color: transparent;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    height: 3px;
+}
+
+#social-media {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+#social-media li {
+    display: inline-block;
+    margin-right: 0px;
+}
+
+.social {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.social:hover {
+    text-decoration: none;
+}
+
+.social-rss {
+    background-image: url('img/rss.svg');
+}
+
+.social-rss:hover {
+    background-image: url('img/rss-active.svg');
+}
+
+.social-twitter {
+    background-image: url('img/twitter.svg');
+}
+
+.social-twitter:hover {
+    background-image: url('img/twitter-active.svg');
+}
+
+.social-gplus {
+    background-image: url('img/googleplus.svg');
+}
+
+.social-gplus:hover {
+    background-image: url('img/googleplus-active.svg');
+}
+
+.social-github {
+    background-image: url('img/github.svg');
+}
+
+.social-github:hover {
+    background-image: url('img/github-active.svg');
+}
+
+.social-synthinet {
+    background-image: url('img/synthinet.svg');
+}
+
+.social-synthinet:hover {
+    background-image: url('img/synthinet-active.svg');
+}
+
+#meta-stuff {
+    float: right;
+}
+
+#meta-stuff>* {
+    display: inline-block;
+}
+
+#meta-stuff>a {
+    font-family: sans-serif;
+    font-size: small;
+    margin-right: 20px;
+}
+
+#searchform label {
+    display: none;
+}
+
+#searchform input {
+    width: 150px;
+    border-radius: 20px;
+    border: 1px solid silver;
+    height: 16px;
+    box-shadow: 0px 1px #EEEEEE, inset 0px 1px 2px rgba(127, 127, 127, 0.7);
+    background-image: url(img/search.png);
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-position: 4px 3px;
+    padding-left: 20px;
+}
+
+#searchform input:hover {
+    border: 1px solid grey;
+}
+
+#searchsubmit {
+    display: none;
+}
+
+#headerimg {
+    padding-top: 5px;
+}
+
+#header img {
+    width: 96px;
+    height: 96px;
+    float: left;
+    padding-left: 25px;
+    padding-top: 6px;
+}
+
+#header h1 {
+    margin-top: 10px;
+}
+
+#header h1 a {
+    display: block;
+    color: #333333;
+    font-size: 180%;
+    text-decoration: none;
+    text-shadow: 1px 1px silver;
+    margin-left: 150px;
+    font-weight: normal;
+}
+
+#header .description {
+    color: #333333;
+    font-size: 125%;
+    padding-bottom: 30px;
+    margin-left: 150px;
+    margin-top: -20px;
+}
+
+.menu-header-menu-container {
+    display: block;
+}
+
+#menu-header-menu {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: block;
+    list-style-type: none;
+}
+
+#menu-header-menu .current-menu-item {
+    font-weight: bold;
+}
+
+#menu-header-menu li {
+    display: inline-block;
+    padding-right: 50px;
+    font-size: 110%;
+}
+
+#page {
+    max-width: 768px; 
+    margin: 0 auto;
+}
+
+.authordate {
+    width: 64px;
+    float: left;
+}
+
+.author {
+    border: 1px solid grey;
+    border-radius: 48px;
+    height: 48px;
+    width: 48px;
+    margin-bottom: 16px;
+    padding: 2px;
+}
+
+.author:after {
+    content: " ";
+    display: inline-block;
+    width: 9px;
+    height: 14px;
+    background: url("img/arrow.png");
+    position: relative;
+    top: -37px;
+    left: 52px;
+}
+
+.date {
+    color: #77AADD;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 32px;
+}
+
+.date .year {
+    font-size: 29px;
+    border-right: 1px solid #77AADD;
+    display: inline-block;
+    padding-right: 3px;
+    line-height: 32px;
+}
+
+.date .md {
+    display: inline-block;
+}
+
+.date .month {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.date .day {
+    font-size: 18px;
+    text-align: center;
+}
+
+.contents {
+    margin-left: 80px;
+    font-size: 125%;
+    text-align: justify;
+}
+
+.contents h1:first-child a,
+h1.light {
+    color: #333333;
+    font-family: 'Lato', 'Verdana', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 200;
+}
+
+.contents h1:first-child a:hover {
+    color: #6666ff;
+    text-decoration: none; 
+}
+
+.contents h1, 
+.contents h2, 
+.contents h3, 
+.contents h4, 
+.contents h5, 
+.contents h6 {
+    font-family: 'Lato', 'Verdana', 'Helvetica', 'Arial', sans-serif;
+}
+
+.contents.contents-page {
+    margin-left: 0px;
+}
+
+table {
+    border-collapse: collapse;
+    border-bottom: 3px double black;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+td {
+    min-width: 75px;
+    border-left: 1px solid black;
+    padding: 0px 5px;
+}
+
+td:first-child {
+    border-left: none;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #EEEEEE;
+}
+
+
+hr {
+    border: 0px;
+    background-color: grey;
+    height: 1px;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 3px solid black;
+    margin-left: 1.5em;
+    padding-left: 0.5em;
+}
+
+blockquote em {
+    font-style: normal;
+}
+
+article hr {
+    border: 0px;
+    background-color: silver;
+    height: 1px;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+article hr:after {
+    content: " ";
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    background-image: url(img/separator.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 24px;
+}
+
+#before-comments {
+    margin-bottom: 50px;
+}
+
+hr.footer {
+    color: black;
+}
+
+footer {
+    font-size: small;
+    text-align: center;
+}
+
+
+/* Breadcrumbs */
+
+#breadcrumbs {
+    font-family: sans-serif;
+    font-size: 80%;
+    margin-left: -8px;
+}
+
+#breadcrumbs>* {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/* Anchors */
+
+.autoanchors-toc {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+
+    margin: 20px 0px;
+    padding-left: 10px;
+}
+
+.autoanchors-toc>ol {
+    margin-bottom: 5px;
+}
+
+.autoanchors-toc-header {
+    font-family: 'Lato', 'Verdana', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 200;
+}
+
+/* Syntax highlighting */
+
+.bwp-syntax-wrapper {
+    border: 1px solid silver;
+    border-radius: 3px;
+}
+
+.bwp-syntax-wrapper td.ln {
+    min-width: 0;
+}
+
+.bwp-syntax-wrapper .co1,
+.bwp-syntax-wrapper .coMULTI { /* Comment */
+    color: #888888;
+    font-style: italic;
+}
+
+.bwp-syntax-wrapper .co2 { /* PreProc */
+    color: #137B04;
+    font-weight: bold;
+}
+
+.bwp-syntax-wrapper .kw1 { /* Statement */
+    color: #9E1B4E;
+    font-weight: bold;
+}
+
+.bwp-syntax-wrapper .kw3 { /* Identifier */
+    color: #387A61;
+}
+
+.bwp-syntax-wrapper .kw4 { /* Type */
+    color: #134DBF;
+    font-weight: bold;
+}
+
+
+.bwp-syntax-wrapper .st0 { /* String */
+    color: #AA0000;
+}
+
+.bwp-syntax-wrapper .nu0,
+.bwp-syntax-wrapper .kw2 { /* Constant */
+    color: #FC7808;
+}
+
+/* Series */
+
+.seriesmeta {
+    font-family: sans-serif;
+    font-size: 70% !important;
+}
+
+.seriesbox {
+    display: none !important;
+}
+
+.series-nav {
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    border-left: 0;
+    border-right: 0;
+}

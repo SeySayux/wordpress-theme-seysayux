@@ -1,0 +1,27 @@
+body {
+    background-color: white;
+    color: #111111;
+}
+
+#header h1 a {
+    color: #333333;
+}
+
+a {
+    color: #2222aa;
+    text-decoration: none;
+}
+
+.date {
+    color: #77AADD;
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}

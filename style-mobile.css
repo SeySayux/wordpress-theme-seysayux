@@ -1,0 +1,49 @@
+#page {
+    width: 100%;
+}
+
+#header img {
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#header h1 a {
+    margin: 0px;
+    font-size: 1.4em;
+}
+
+#header .description {
+    margin: 0px;
+    margin-top: -20px;
+}
+
+.authordate {
+    width: 100%;
+    float: none;
+    margin-top: 20px;
+}
+
+.author {
+    display: inline-block;
+}
+
+.date {
+    float: right;
+    display: inline-block;
+    padding-top: 8px;
+}
+
+.contents {
+    margin: 0px;
+}
+
+.contents h1:first-child {
+    margin-top: 0px;
+    font-size: 180%;
+}
+
+h2 {
+    font-size: 130%;
+}
