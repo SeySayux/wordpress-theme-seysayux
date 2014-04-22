@@ -332,6 +332,14 @@ hr.double {
     text-align: justify;
 }
 
+.contents h1:first-child {
+    margin-bottom: -6px;
+}
+
+article p:first-child {
+    margin-top: 24px;
+}
+
 .contents h1:first-child a,
 h1.light {
     color: #333333;
